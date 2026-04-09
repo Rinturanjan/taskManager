@@ -1,16 +1,77 @@
-# React + Vite
+# Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small full-stack Task Manager application built with React and Node.js/Express.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- View all tasks
+- Add a new task
+- Mark task as completed
+- Delete a task
+- Loading and error states
+- Simple file-based persistence using JSON
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Frontend: React + Vite
+- Backend: Node.js + Express
+- Storage: JSON file
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+task-manager-app/
+- backend/
+- frontend/
+
+## Setup Instructions
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/Rinturanjan/taskManager.git
+cd task-manager-app
+
+
+##Run Instructions
+
+- Start the backend by going to the backend folder, installing dependencies, and running the server. It will run on http://localhost:5000
+
+- Then start the frontend from the frontend folder after installing dependencies. It will run on http://localhost:5173
+
+- Open http://localhost:5173
+ in your browser to use the app. Make sure the backend is running first.
+
+
+#API Endpoints
+
+- GET /tasks → fetch all tasks
+- POST /tasks → create a new task
+- PATCH /tasks/:id → update task completion status
+- DELETE /tasks/:id → delete a task
+
+- All responses are in JSON format.
+
+
+#Validation & Error Handling
+
+- Task title must not be empty.
+- Completed field must be boolean.
+- Handles task not found errors.
+- Frontend shows loading and error messages for better user experience.
+
+
+#Assumptions / Trade-offs
+
+- Project is kept small as per assignment scope.
+- Used JSON file instead of database for simplicity.
+- Focused more on functionality than UI design.
+- Update API handles only task status.
+
+
+#Future Improvements
+
+- Add task filtering (completed/incomplete).
+- Allow editing task title.
+- Use database like MongoDB.
+- Add authentication and testing.
+- Add Docker support.
