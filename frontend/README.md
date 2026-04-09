@@ -23,16 +23,15 @@ task-manager-app/
 - backend/
 - frontend/
 
-## Setup Instructions
+# Setup Instructions
 
-### 1. Clone the project
+# Clone the project
 
 ```bash
 git clone https://github.com/Rinturanjan/taskManager.git
 cd task-manager-app
 
-
-##Run Instructions
+# Run Instructions
 
 - Start the backend by going to the backend folder, installing dependencies, and running the server. It will run on http://localhost:5000
 
