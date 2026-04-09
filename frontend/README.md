@@ -23,9 +23,9 @@ task-manager-app/
 - backend/
 - frontend/
 
-# Setup Instructions
+Setup Instructions
 
-# Clone the project
+Clone the project
 
 ```bash
 git clone https://github.com/Rinturanjan/taskManager.git
